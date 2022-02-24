@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300;400;500;600;800&display=swap");
+
+:root {
+    --Pale-blue: #e0e8ff;
+    --Bright-blue: #7770c0;
+    --Very-pale-blue: hsl(225, 100%, 98%);
+    --Desaturated-blue: hsl(224, 23%, 55%);
+    --Dark-blue: hsl(223, 47%, 23%);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Red Hat Display", sans-serif;
+}
+
+.component {
+    height: 100vh;
+    width: 100vw;
+    background: var(--Very-pale-blue);
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.backgroundImage {
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    width: 100vw;
+}
+
+.container {
+    position: relative;
+    z-index: 2;
+    width: 450px;
+    height: 700px;
+    border-radius: 25px;
+    background: white;
+    box-shadow: 5px 5px 15px 5px #c6cee4;
+    overflow: hidden;
+}
+
+.content {
+    display: grid;
+    justify-items: center;
+    text-align: center;
+}
+
+.plan {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    align-items: center;
+    border-radius: 15px;
+    width: 360px;
+    margin-bottom: 20px;
+    padding: 10px 20px;
+    transition: all .2s;
+}
+
+.plan:hover {
+    background: var(--Very-pale-blue);
+    
+}
+
+.titlePlan {
+    font-size: 18px;
+    font-weight: 800;
+    color: var(--Dark-blue);
+    text-align: left;
+    margin-bottom: -10px;
+}
+
+.pricePlan {
+    text-align: left;
+    color: var(--Desaturated-blue);
+}
+
+.btn {
+    width: 400px;
+    height: 50px;
+    border-radius: 15px;
+    border: none;
+    background: transparent;
+    font-weight: 600;
+    font-size: 14px;
+    letter-spacing: 1px;
+    transition: all .2s;
+    margin-bottom: 10px;
+}
+
+.change {
+    border: none;
+    background-color: transparent;
+    font-weight: 600;
+    font-size: 14px;
+    color: #7770c0;
+    letter-spacing: 1px;
+    
+}
+
+.btnProceed {
+    background: var(--Bright-blue);
+    color: white;    
+    
+}
+
+.btnProceed:hover {
+    -webkit-box-shadow: 0px 0px 15px -4px #3829E0; 
+    box-shadow: 0px 0px 15px -4px #3829E0;
+    border: 2px solid rgb(0, 0, 0);
+}
+
+.btnCancel:hover {
+    box-shadow: 0px 0px 15px -4px #3829E0;
+
+}
